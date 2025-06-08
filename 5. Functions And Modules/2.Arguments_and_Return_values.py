@@ -1,10 +1,10 @@
 #Positional Arguments
 
-# def add(a, b):#these are parameters
-#     return a + b
+def add(a, b):#these are parameters
+    return a + b
 
-# c = add(5, 6)# these are called arguments
-# print(c)
+c = add(5, 6)# these are called arguments
+print(c)
 
 #Default Arguments
 def add(a, b = 10):
