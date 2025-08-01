@@ -26,16 +26,16 @@ greet()
 # local z value : 32
 
 
-def changing_global_variable_value():
-    print("hello")
-    global z # please modify global variable value z
-    z = 0 #this will refer to global z and not create a local variable
-    print(f"the value of z is : {z}")
+# def changing_global_variable_value():
+#     print("hello")
+#     global z # please modify global variable value z
+#     z = 0 #this will refer to global z and not create a local variable
+#     print(f"the value of z is : {z}")
 
 
-z = 23
-changing_global_variable_value()
-print(z)
+# z = 23
+# changing_global_variable_value()
+# print(z)
 
 # -->before using global keyword
 # hello
