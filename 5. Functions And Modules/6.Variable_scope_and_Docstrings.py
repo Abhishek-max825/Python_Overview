@@ -1,4 +1,4 @@
--->LOCAL ABD GLOBAL VARIABLES
+#-->LOCAL ABD GLOBAL VARIABLES
 
 def sum(a,b):
     # a and b are local variables
@@ -26,16 +26,16 @@ greet()
 # local z value : 32
 
 
-# def changing_global_variable_value():
-#     print("hello")
-#     global z # please modify global variable value z
-#     z = 0 #this will refer to global z and not create a local variable
-#     print(f"the value of z is : {z}")
+def changing_global_variable_value():
+    print("hello")
+    global z # please modify global variable value z
+    z = 0 #this will refer to global z and not create a local variable
+    print(f"the value of z is : {z}")
 
 
-# z = 23
-# changing_global_variable_value()
-# print(z)
+z = 23
+changing_global_variable_value()
+print(z)
 
 # -->before using global keyword
 # hello
@@ -49,11 +49,11 @@ greet()
 
 
 # -->DOCSTRINGS
-def sum(a,b):
+def docstring(a,b):
     '''sum of two numbers'''
     c = a+b
     return c
 
-print(sum.__doc__)
+print(docstring.__doc__)
 #--> it is used right after the function is declared and mostly it is used to give information about function working
 # sum of two numbers
