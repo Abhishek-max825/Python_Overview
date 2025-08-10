@@ -15,7 +15,7 @@ class Employee:
 
 e1 = Employee() # an object of class employee us created here
 print(e1.company) # attribute is called here
-print(e1.get_salary())#method is called here
+print(e1.get_salary())# method is called here
 
 # HP
 # <__main__.Employee object at 0x00000268950C7230>
