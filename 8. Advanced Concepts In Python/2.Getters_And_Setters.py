@@ -12,6 +12,7 @@ class Employee:
     def first_name(self):
         l = self.name.split(" ")
         # print(l)
+        # ['Jack', 'Doe']
         return l[0]#this returned value will be passed as an argument in setter function like def first_name(self,"John")
     
     @first_name.setter
