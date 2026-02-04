@@ -1,0 +1,3 @@
+whatsuppp!!!!
+Its about writing a file
+now its appending extra content at the end
