@@ -1,7 +1,8 @@
 '''
 Creating Command Line Utilities
 
-You can use Python to create simple command-line utilities. The argparse module makes it easier to handle command-line arguments.
+-> You can use Python to create simple command-line utilities.
+-> The argparse module makes it easier to handle command-line arguments.
 '''
 
 import argparse
