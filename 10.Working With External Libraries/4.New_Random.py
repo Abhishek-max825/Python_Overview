@@ -1,0 +1,1 @@
+print("hushar ela boisss nalee code madte")
