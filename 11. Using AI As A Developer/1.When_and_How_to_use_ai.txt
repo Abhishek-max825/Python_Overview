@@ -1,0 +1,24 @@
+so main 5 strategies you need to follow when using ai
+
+1. Divide and Conquer :-
+-> Instead of using ai from scratch start to write the code by your own and use when the necessity occurs.
+-> You need to know the flow of the code
+
+2. Which AI tools to use?
+-> Use github copilot,loveable and gemini rather than chatgpt try some new stuff
+-> For IDE use cursor,windsurf or antigravity 
+
+3. Be very specific with your prompt
+-> Don't just write like "run this code" or "solve the error" instead of that understand the code structure and its flow and give a specific command
+
+4. Do not rely on ai completely
+-> Use your brain ,understand the problem and solve it.
+-> Enhance your productivity by AI dont use it to replace you
+-> Remeber its your agent
+
+5. Use AI to solve problems
+-> When you are stuck in some problem just use ai to understand the solving methodology.
+-> You can replace the code when you understand the workflow.
+
+# Note :- Never use AI in the time of practising , Instead of that use it for giving questions for solving to learn more
+
