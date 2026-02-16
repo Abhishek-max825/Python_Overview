@@ -1,5 +1,5 @@
 """
-Using Open AI API to create a simple tic-tac-toe game where the user can play against an AI opponent. The AI will use the OpenAI API to determine its moves based on the current state of the board. The game will have both single-player and two-player modes, allowing users to either play against the AI or against another human player. The code will include functions for displaying the board, checking for winners, and handling user input.
+Using Open AI API 
 """
 from openai import OpenAI
 
