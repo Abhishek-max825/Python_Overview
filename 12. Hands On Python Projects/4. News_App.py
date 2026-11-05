@@ -2,7 +2,7 @@ import requests
 
 query = input("In which event are you interested in ?? ")
 
-api = "e3f146c499fb49f0b2420165b3c1ab45"
+api = "api_key"
 
 url = f"https://newsapi.org/v2/everything?q={query}&apiKey={api}"
 
