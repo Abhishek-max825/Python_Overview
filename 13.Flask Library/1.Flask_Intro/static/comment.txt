@@ -1,0 +1,1 @@
+basically its used to store a type of files that will be available publically to all 
