@@ -148,11 +148,11 @@ def Exception_handling(value1,value2):
       finally:
          print("end") 
 
-# 2.Custom Exception
 value1 = int(input("enter the first number : "))
 value2 = int(input("enter the second number : "))
 Exception_handling(value1,value2)     
 
+# 2.Custom Exception
 class NegativeNumberError(Exception):
     def __init__(self, message = "Negative values are not allowed"):
        self.message = message
