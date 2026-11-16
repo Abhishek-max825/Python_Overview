@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class X - Delhi Public School</title>
+  </head>
+  <body>
+    <ul>
+      {# this is a comments in jinja #}
+      {% for key in marks.keys() %}
+            <li>The marks of {{key}} is {{marks.get(key)}}
+            {% if marks.get(key) > 80 %}
+                 <span>Good</span>
+            {% endif %}
+            </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
