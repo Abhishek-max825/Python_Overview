@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}  {% endblock title%}</title>
+    <style>
+        nav{
+            background-color : red;
+            color : white;
+            gap : 7px;
+            display : flex;
+            justify-content : center;
+        }
+        footer{
+           background-color : yellow;
+           color : black;
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+       <a href="/"><span>Home</span></a>
+       <a href="/about"><span>About</span></a>
+       <a href="/contact"><span>Contact</span></a>
+    </nav>
+
+    {% block text %}
+        <!--This is a base block means the code written in the base html file can be inherited by others.
+            And this {% block content_name %}The content cna be added dyamically when inherited by child class {% endblock content_name %}-->
+    {% endblock text %}
+
+    <footer>Thankyou for visiting Repo</footer>
+</body>
+</html>
+
+
+ 
