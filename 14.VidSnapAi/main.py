@@ -60,3 +60,66 @@ def gallery():
 
 
 app.run(debug=True)
+
+# NOTE:
+'''
+
+Search for `UPLOAD_FOLDER|secure_filename|rec_id`
+
+These lines handle an uploaded file in the Flask route.
+
+```python
+if file:
+```
+
+Checks whether a file was actually uploaded. An empty or missing file object is considered false.
+
+```python
+filename = secure_filename(file.filename)
+```
+
+Cleans the uploaded filename to prevent unsafe characters or paths. For example:
+
+- `../../photo.jpg` becomes `photo.jpg`
+- `my photo.jpg` becomes `my_photo.jpg`
+
+This reduces directory-traversal and invalid-filename risks.
+
+```python
+if not os.path.exists(os.path.join(app.config['UPLOAD_FOLDER'], rec_id)):
+```
+
+- `os.path.join(...)` builds the folder path.
+- `os.path.exists(...)` checks whether that folder already exists.
+- `not` executes the following block only if the folder is missing.
+
+For example:
+
+```text
+C:\Users\abhis\...\14.VidSnapAi\user_upload\<rec_id>
+```
+
+```python
+os.mkdir(os.path.join(app.config['UPLOAD_FOLDER'], rec_id))
+```
+
+Creates a folder named after `rec_id`. It acts like a separate upload folder for each recording.
+
+```python
+file.save(os.path.join(app.config['UPLOAD_FOLDER'], rec_id, filename))
+```
+
+Saves the uploaded file inside that recording folder.
+
+Example final path:
+
+```text
+C:\Users\abhis\OneDrive\docfiles\Python Bootcamp - 2025
+\14.VidSnapAi\user_upload
+\<rec_id>\photo.jpg
+```
+
+The complete upload logic is in `main.py`.
+
+For stronger code, validate `rec_id` and use `os.makedirs(..., exist_ok=True)` rather than `os.mkdir(...)`. Otherwise, if `rec_id` contains `..` or `/`, it could create files outside the intended upload directory.
+'''
