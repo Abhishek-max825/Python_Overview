@@ -4,7 +4,7 @@ import uuid
 import os
 
 
-UPLOAD_FOLDER = 'user_upload'
+UPLOAD_FOLDER = "C:\\Users\\abhis\\OneDrive\\docfiles\\Python Bootcamp - 2025\\14.VidSnapAi\\user_upload"
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 
