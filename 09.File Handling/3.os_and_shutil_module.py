@@ -64,7 +64,7 @@ shutil :-
 import shutil
 
 #shutil.rmtree("9.File Handling/dir")
-## it removes the firectory at any cost it wont check whether directory is empty or not
+## it removes the file directory at any cost it wont check whether directory is empty or not
 ## it just delete everythinhg inside that directory
 
 shutil.copy("9.File Handling/abhi.txt","9.File Handling/profile.txt")
